@@ -17,15 +17,15 @@ This project builds a classifier to recognize 26 letters of the English alphabet
 - Displays sample images to understand the dataset
 
 
-## Data
+## Dataset
 
-- Dataset: Sign Language MNIST
-- Each image is 28x28 pixels, grayscale.
-- CSV format: each row is a flattened image, with a label from 0–25 representing the letters A–Z (no J/Z due to motion).
-- Data preprocessing steps:
-  - Normalization to [0,1]
-  - Reshaping to (28, 28, 1)
-  - One-hot encoding of labels
+- Source: [Kaggle – Sign Language MNIST](https://www.kaggle.com/datasets/datamunge/sign-language-mnist)
+- Shape:
+  - `train.csv`: 27,455 samples  
+  - `test.csv`: 7,172 samples  
+- Format:
+  - Each sample is a flattened 28x28 grayscale image (784 features)  
+  - Labels range from `0–25`, corresponding to letters A–Z
 
 
 ## Usage
