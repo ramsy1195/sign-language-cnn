@@ -11,13 +11,14 @@ This project builds a classifier to recognize 26 letters of the English alphabet
 ## Project Structure
 ```text
 .
-├── images/
+├── images/                      
 │   ├── sample_images.png        # Visualization of sample sign language images
 │   └── training_accuracy.png    # Accuracy plot of training vs. validation
 ├── sign_language.ipynb          # Jupyter notebook for interactive development and experimentation
 ├── sign_language.py             # Python script version for reproducible training and evaluation
-├── train.csv                    # Training dataset (MNIST Sign Language)
-├── test.csv                     # Testing dataset (MNIST Sign Language)
+├── data/                        # Folder to hold the dataset csv files
+|  ├── train.csv                 # Training dataset (MNIST Sign Language)
+|  └── test.csv                  # Testing dataset (MNIST Sign Language)
 ├── requirements.txt             # Required Python packages
 └── README.md                    
 ```
