@@ -68,8 +68,8 @@ Make sure the dataset CSVs `train.csv` and `test.csv` are in the same directory.
 
 
 - **Training Accuracy Plot**
-![Training Accuracy Plot](images/accuracy_plot.png)
 
+![Training Accuracy Plot](images/accuracy_plot.png)
 
 ## Notes
 - The model is a simple CNN with two Conv2D + MaxPooling layers, followed by Dense and Dropout layers.
