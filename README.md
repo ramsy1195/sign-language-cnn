@@ -24,25 +24,23 @@ This project builds a classifier to recognize 26 letters of the English alphabet
   - `train.csv`: 27,455 samples  
   - `test.csv`: 7,172 samples  
 - Format:
-  - Each sample is a flattened 28x28 grayscale image (784 features)  
-  - Labels range from `0–25`, corresponding to letters A–Z
+  - Each sample is a flattened `28x28` grayscale image (784 features)  
+  - Labels range from `0–25`, corresponding to letters `A–Z`
 
 
 ## Usage
 
-1. Clone this repo:
-```bash
-git clone htps://github.com/ramsy1195/sign-language-cnn.git
-cd sign-language-cnn
-```
-
-2. Run the notebook in Google Colab or locally using Jupyter:
-  - `sign_language.ipynb` (recommended)
-  - Or run the script:
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Run the notebook or script:
+- In Jupyter Notebook: run all cells in `sign_language.ipynb`.
+- In terminal:
   ```bash
   python sign_language.py
   ```
-3. Make sure the dataset CSVs `train.csv` and `test.csv` are in the same directory.
+Make sure the dataset CSVs `train.csv` and `test.csv` are in the same directory.
 
 ## Accuracy
 - Test Accuracy: 93.67%
@@ -50,8 +48,9 @@ cd sign-language-cnn
 - Batch Size: 128
 
 ## Visual Outputs
-Sample Training Images
+- **Sample Training Images**
 ![Sample Images](images/sample_images.png)
 
-Training Accuracy Plot
+
+- **Training Accuracy Plot**
 ![Training Accuracy Plot](images/accuracy_plot.png)
